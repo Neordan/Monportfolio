@@ -47,7 +47,7 @@ ul li a {
 }
 
 ul li.active a , ul li:hover a {
-    color: #30fe6c;
+    color: #1c73ed;
 }
 
 #home {
@@ -68,7 +68,7 @@ ul li.active a , ul li:hover a {
     right: 0;
     width: 667px;
     height: 25vw;
-    background: #30fe6c; 
+    background: #1c73ed; 
     border-radius: 25vw 25vw 0 0;
 }
 
@@ -83,7 +83,7 @@ ul li.active a , ul li:hover a {
 
 .content h2 {
     position: relative;
-    color: #30fe6c;
+    color: #1c73ed;
     font-size: 3.2em;
     line-height: 1.6em;
 }
@@ -101,7 +101,7 @@ ul li.active a , ul li:hover a {
     display: inline-block;
     font-size: 1.25em;
     max-width: 200px;
-    background: #30fe6c;
+    background: #1c73ed;
     color: #222;
     text-align: center;
     padding: 18px 30px;
@@ -175,7 +175,7 @@ ul li.active a , ul li:hover a {
 }
 
 #services .servicesBox:hover {
-    border: 2px solid #30fe6c;
+    border: 2px solid #1c73ed;
 }
 
 #services .servicesBox img {
@@ -193,7 +193,7 @@ ul li.active a , ul li:hover a {
 #services .servicesBox h3 {
     color: #fff;
     font-weight: 500;
-    color: #30fe6c;
+    color: #1c73ed;
 } 
 
 .center {
@@ -251,11 +251,11 @@ ul li.active a , ul li:hover a {
 }
 
 #contact .content a:hover {
-    background: #30fe6c;
+    background: #1c73ed;
 }
 
 #contact .content a ion-icon {
-    color: #30fe6c;
+    color: #1c73ed;
     font-size: 1.5em;
     margin-right: 10px;
     transition: 0.5s;
