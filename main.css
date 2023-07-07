@@ -61,17 +61,6 @@ ul li.active a , ul li:hover a {
     padding: 100px;
 }
 
-#home::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 667px;
-    height: 25vw;
-    background: #1c73ed; 
-    border-radius: 25vw 25vw 0 0;
-}
-
 #home .content {
     position: relative;
     display: flex;
@@ -196,20 +185,15 @@ ul li.active a , ul li:hover a {
     color: #1c73ed;
 } 
 
-.center {
-    display: flex;
-    justify-content: center;
-}
-
 #portfolio {
     background: #2e2f34;
     text-align: center;
 }
 
 #portfolio .content {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
     margin: 40px 0;
 }
 
@@ -218,8 +202,8 @@ ul li.active a , ul li:hover a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 350px;
-    max-width: 100%;
+    width: 30%;
+    min-width: 300px;
     height: 300px;
     background: #1c73ed9c;
     border-radius: 20px;
@@ -229,13 +213,12 @@ ul li.active a , ul li:hover a {
 
 #portfolio .card:hover {
     height: 400px;
-    cursor: pointer;
 }
 
 #portfolio .card .img-box {
     position: absolute;
     top: 20px;
-    width: 300px;
+    width: 90%;
     height: 220px;
     background: #333;
     border-radius: 12px;
@@ -300,6 +283,7 @@ ul li.active a , ul li:hover a {
     color: white;
     font-weight: 500;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 #portfolio .card .content-site a:hover {
@@ -352,7 +336,7 @@ ul li.active a , ul li:hover a {
     align-items: center;
     flex-wrap: wrap;
     gap: 150px 100px;
-    padding: 100px 50px;
+    padding: 100px 20px;
 }
 
 .copyrights {
@@ -474,12 +458,6 @@ ul li.active a , ul li:hover a {
         font-size: 3em;
     }
 
-    #home::before {
-        width: 80vw;
-        height: 40vw;
-        border-radius: 25vw 25vw 0 0;
-    }
-
     #home .me {
         height: 40vw;
     }
@@ -494,15 +472,19 @@ ul li.active a , ul li:hover a {
 }
 
 @media (max-width: 480px) {
+
+    header {
+        background: #1c73ed71;
+    }
+
     #portfolio .card {
-        width: 230px;
+        min-width: 230px;
         border-radius: 15px;
     }
 
     #portfolio .card .img-box {
-        width: 185px;
         border-radius: 10px;
-    }
+     }
 
     #portfolio .card .content-site p {
         font-size: 0.8rem;
