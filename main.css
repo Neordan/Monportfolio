@@ -493,4 +493,8 @@ ul li.active a , ul li:hover a {
     #portfolio .card .content-site a {
         font-size: 0.9rem;
     }
+
+    #portfolio .content {
+        gap: 84px;
+    }
 }
