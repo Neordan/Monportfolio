@@ -209,25 +209,103 @@ ul li.active a , ul li:hover a {
 #portfolio .content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 80px;
     margin: 40px 0;
 }
 
-#portfolio .imgBox {
+#portfolio .card {
     position: relative;
-    height: 260px;
-}
-
-#portfolio .imgBox img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 350px;
-    height: 100%;
     max-width: 100%;
-    opacity: 0.6;
+    height: 300px;
+    background: #1c73ed9c;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
-#portfolio .imgBox img:hover {
+#portfolio .card:hover {
+    height: 400px;
+    cursor: pointer;
+}
+
+#portfolio .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#portfolio .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .card img:hover {
     opacity: 1;
 }
+
+#portfolio .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px sold #000;
+}
+
+#portfolio .card .content-site {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#portfolio .card:hover .content-site {
+    top: 130px;
+    height: 250px;
+}
+
+#portfolio .card .content-site h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#portfolio .card .content-site p {
+    color: #757575;
+}
+
+#portfolio .card .content-site a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #1d1d1d;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+#portfolio .card .content-site a:hover {
+    opacity: 0.8;
+}
+
 
 #contact .content {
     display: grid;
@@ -265,6 +343,16 @@ ul li.active a , ul li:hover a {
 
 #contact .content a:hover, #contact .content a:hover ion-icon {
     color: #222;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px 100px;
+    padding: 100px 50px;
 }
 
 .copyrights {
@@ -402,5 +490,25 @@ ul li.active a , ul li:hover a {
 
     #contact .content a {
         height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #portfolio .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    #portfolio .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    #portfolio .card .content-site p {
+        font-size: 0.8rem;
+    }
+
+    #portfolio .card .content-site a {
+        font-size: 0.9rem;
     }
 }
