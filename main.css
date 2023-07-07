@@ -215,10 +215,12 @@ ul li.active a , ul li:hover a {
 
 #portfolio .imgBox {
     position: relative;
+    height: 260px;
 }
 
 #portfolio .imgBox img {
     width: 350px;
+    height: 100%;
     max-width: 100%;
     opacity: 0.6;
 }
